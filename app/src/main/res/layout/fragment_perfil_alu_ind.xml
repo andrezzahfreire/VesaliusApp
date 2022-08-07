@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilAluInd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/aluno_tipo"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txt_nomecomp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/txt_area"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/txt_emailperfil"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text=" " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/bt_ireditarperfil"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Editar perfil" />
+
+            <Button
+                android:id="@+id/bt_redefinirsenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trocar senha" />
+
+            <Button
+                android:id="@+id/bt_irsaibamais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saiba mais" />
+
+            <Button
+                android:id="@+id/bt_sairconta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Sair da conta " />
+
+            <Button
+                android:id="@+id/bt_excluirconta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excluir conta " />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

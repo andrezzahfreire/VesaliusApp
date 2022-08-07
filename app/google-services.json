@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "511959579926",
+    "project_id": "vesalius-4305f",
+    "storage_bucket": "vesalius-4305f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511959579926:android:b08ae301557ec2abf42437",
+        "android_client_info": {
+          "package_name": "com.example.vesalius"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511959579926-kprlik64lar2960mge1ldsb1gee7ipvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs5zZFrJMkrzcT2rQX4N7HtXH7oyB08o8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511959579926-kprlik64lar2960mge1ldsb1gee7ipvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

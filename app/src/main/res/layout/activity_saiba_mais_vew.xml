@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaibaMaisVew">
+
+    <include
+        layout="@layout/appbarprin"
+        />
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Sobre o vesalius " />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textStyle="bold"
+        android:text="Vesalius é uma plataforma de estudos, desenvolvida por alunas da Fundação Matias Machiline, com o objetivo de otimizar o ensino e aprendizagem a estudantes da área da saúde." />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:text="No app você encontra:
+    \n Os principais sistemas do corpo humano\n Realidade aumentada\n atividades dinâmicas:  sensores, listas e quizzes
+     \nAlém de resumos e vídeos aulas" />
+
+
+</LinearLayout>

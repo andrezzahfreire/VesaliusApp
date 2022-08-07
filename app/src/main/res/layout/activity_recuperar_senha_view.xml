@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@drawable/backsenha"
+    android:orientation="vertical"
+    tools:context=".RecuperarSenhaView">
+
+    <include
+        layout="@layout/appbar"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/container"
+        android:backgroundTint="@color/azulpri"
+        android:padding="10dp"
+        android:text= "Informe abaixo o seu e-mail de login e em seguida acesse o e-mail para prosseguir com o passo a passo de recuperação de acesso."
+        android:drawableLeft="@drawable/info"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:background="@drawable/container"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/edt_emailrep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email:"
+            android:textColorHint="@color/azulsec"
+            android:drawableRight="@drawable/gmaillogo"
+            android:inputType="textEmailAddress" />
+
+
+
+
+        <Button
+            android:id="@+id/bt_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btshape"
+            android:text="enviar" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
