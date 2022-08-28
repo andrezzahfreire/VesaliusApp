@@ -37,23 +37,25 @@
         android:background="@drawable/container"
         android:orientation="vertical">
 
-
-
-
-
-
-        <EditText
-            android:id="@+id/edt_emailrep"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="Email:"
+            android:background="@color/white"
+            app:endIconDrawable="@drawable/gmaillogo"
+            app:endIconTint="@color/azulsec"
+            app:endIconMode="custom"
             android:textColorHint="@color/azulsec"
-            android:drawableRight="@drawable/gmaillogo"
-            android:inputType="textEmailAddress" />
 
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/bt_enviar"
@@ -64,7 +66,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="15dp"
             android:textColor="@color/white"
-            android:background="@drawable/btshape"
+            android:backgroundTint="@color/rosa"
             android:text="enviar" />
 
 

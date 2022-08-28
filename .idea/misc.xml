@@ -14,9 +14,14 @@
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/drawable/ic_home.xml" value="0.205" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/drawable/ic_lock.xml" value="0.2165" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/drawable/ic_person.xml" value="0.205" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/font/fontfamily.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/font/nunitobold.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_assunto_quiz.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_codigo_sala_view.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_como_jogar_view.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_conteudo_view.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_criar_conta_view.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_criar_conteudo_prof_view.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_editar_dados_view.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_home_aluno_acom_view.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_home_aluno_ind_view.xml" value="0.22" />
@@ -24,18 +29,23 @@
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_login_view.xml" value="0.25" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_main.xml" value="0.1490036231884058" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_on_board_view.xml" value="0.20652173913043478" />
-        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_recuperar_senha_view.xml" value="0.22" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_quiz_aluno_acompanhado_view.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_quiz_inicio.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_recuperar_senha_view.xml" value="0.25" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_saiba_mais_vew.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_splash_screen_view.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_tipo_conta_aluno_view.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/activity_tipo_conta_view.xml" value="0.209375" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/appbar.xml" value="0.209375" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/appbarprin.xml" value="0.2982832618025751" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/card_quiz_design.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/card_view_design.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/fragment_home_aluno_ind.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/fragment_on_board.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/fragment_perfil_alu_ind.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/fragment_quiz_aluno_ind.xml" value="0.3116591928251121" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/fragment_splash.xml" value="0.20652173913043478" />
+        <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/item.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/item_page.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/layout/splash_screen.xml" value="0.209375" />
         <entry key="..\:/Users/andre/OneDrive/Documentos/PROJETO_OFICIAL/app/src/main/res/menu/btmenu.xml" value="0.209375" />

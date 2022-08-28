@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/backlog"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".CodigoSalaView">
@@ -16,21 +17,65 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logoapp" />
+        app:srcCompat="@drawable/logo_app_white" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:background="@drawable/container"
+        android:backgroundTint="@color/azulpri"
+        android:padding="10dp"
+        android:textSize="12sp"
+
+        android:text= "O código da sala será disponibilizado pelo seu professor"
+        android:drawableLeft="@drawable/info"
+
+        />
+
+    <LinearLayout
+        android:background="@drawable/container"
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_margin="20dp"
-        android:inputType="textPersonName"
-        android:hint="Código" />
+        android:orientation="vertical"
+        android:layout_margin="20dp">
 
-    <Button
-        android:id="@+id/bt_entrarsalacod"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text="Entrar" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código:"
+            android:background="@color/white"
+            app:endIconDrawable="@drawable/codigo"
+            app:endIconTint="@color/azulsec"
+            app:endIconMode="custom"
+             android:textColorHint="@color/azulsec"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/bt_entrarsalsacod"
+            android:background="@drawable/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:text="Entrar" />
+    </LinearLayout>
+
+
+
 </LinearLayout>

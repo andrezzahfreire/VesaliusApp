@@ -15,10 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:layout_gravity="center_horizontal"
-
-        app:srcCompat="@drawable/logoapp" />
-
-
+        app:srcCompat="@drawable/logo_app_white" />
 
     <LinearLayout
         android:layout_width="match_parent"

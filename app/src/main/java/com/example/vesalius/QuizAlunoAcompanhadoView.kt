@@ -1,35 +1,26 @@
 package com.example.vesalius
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.vesalius.databinding.ActivityHomeAlunoAcomViewBinding
+import com.example.vesalius.databinding.ActivityHomeProfessorViewBinding
+import com.example.vesalius.databinding.ActivityQuizAlunoAcompanhadoViewBinding
 import com.example.vesalius.util.CustomAdapter
-import kotlinx.android.synthetic.main.appbarprin.*
 
-class HomeAlunoAcomView : AppCompatActivity() {
-    private lateinit var binding: ActivityHomeAlunoAcomViewBinding
-
+class QuizAlunoAcompanhadoView : AppCompatActivity() {
+    lateinit var binding: ActivityQuizAlunoAcompanhadoViewBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityHomeAlunoAcomViewBinding.inflate(layoutInflater)
+        binding = ActivityQuizAlunoAcompanhadoViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(toolbarprin)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        binding.btEntrarSala.setOnClickListener {
-             val intent = Intent(this,CodigoSalaView::class.java)
-            startActivity(intent)
-        }
-
-        val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
+        val recyclerview = findViewById<RecyclerView>(R.id.recyclerview_quiz)
+        val recyclerview2 = findViewById<RecyclerView>(R.id.recyclerview2_quiz)
 
         // this creates a vertical layout Manager
         recyclerview.layoutManager = LinearLayoutManager(this)
+        recyclerview2.layoutManager = LinearLayoutManager(this)
 
         // ArrayList of class ItemsViewModel
         val data = ArrayList<ItemsViewModel>()
@@ -45,8 +36,7 @@ class HomeAlunoAcomView : AppCompatActivity() {
 
         // Setting the Adapter with the recyclerview
         recyclerview.adapter = adapter
-    }// fim on create
+        recyclerview2.adapter = adapter
 
-
-
-}// fim home aluno
+    }
+}

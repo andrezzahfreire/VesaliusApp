@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/azulterc"
-    tools:context=".SaibaMaisVew">
+    tools:context=".ComoJogarView">
 
     <include
         layout="@layout/appbarprin"
@@ -22,7 +22,7 @@
         android:textStyle="bold"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:text="Sobre o vesalius " />
+        android:text="Como jogar?" />
 
     <TextView
         android:id="@+id/textView15"
@@ -32,7 +32,7 @@
         android:layout_margin="20dp"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Vesalius é uma plataforma de estudos, desenvolvida por alunas da Fundação Matias Machiline, com o objetivo de otimizar o ensino e aprendizagem a estudantes da área da saúde." />
+        android:text="O jogador poderá escolher entre os seguintes temas: \n * Sistema Cardiovascular \n * Sistema Nervoso \n * Sistema Digestivo \n * Sistema Esquelético \n * Sistema Urinário \n * Sistema Muscular" />
 
     <TextView
         android:id="@+id/textView16"
@@ -42,9 +42,11 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:text="No app você encontra:
-    \n Os principais sistemas do corpo humano\n Realidade aumentada\n atividades dinâmicas:  sensores, listas e quizzes
-     \nAlém de resumos e vídeos aulas" />
+        android:text="
+O número de questões e o nível das perguntas \nserá referente ao nível que o jogador escolher. \nAlém disso, poderá visualizar seu progresso: \nquantas questões acertou, errou e em quanto tempo.
+
+
+" />
 
 
 </LinearLayout>

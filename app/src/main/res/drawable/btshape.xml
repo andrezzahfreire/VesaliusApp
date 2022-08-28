@@ -7,5 +7,7 @@
         android:color="#CE8888"
         />
 
-
+    <stroke
+        android:width="2dp"
+        android:color="@color/rosa" />
 </shape>

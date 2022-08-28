@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Vesalius" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Vesalius" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/azulpri</item>
+        <item name="colorPrimary">@color/rosa</item>
         <item name="colorPrimaryVariant">@color/azulpri</item>
         <item name="colorOnPrimary">@color/azulpri</item>
         <!-- Secondary brand color. -->
@@ -12,5 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/fontfamily</item>
     </style>
 </resources>
