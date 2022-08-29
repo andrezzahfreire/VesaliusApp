@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azulterc"
+    tools:context=".QuestaoQuizView">
+
+    <include
+        layout="@layout/appbar">
+
+    </include>
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:backgroundTint="@color/azulsec"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/container"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:text="QUESTÃO 09" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:paddingLeft="20dp"
+            android:textColor="@color/white"
+            android:text="Quando a válvula tricúspide se fecha, ela impede o refluxo de sangue do(a) " />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/banca"
+                android:textColor="@color/white"
+                android:text="FGV" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/relogiazul"
+                android:textColor="@color/white"
+                android:text="00:30" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:textAlignment="center"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/dificuldade"
+                android:textColor="@color/white"
+                android:text="Fácil" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_enviar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/banca"
+            android:backgroundTint="@color/azulsec"
+            android:text="opção a" />
+
+        <Button
+            android:id="@+id/bt_enviar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/banca"
+            android:backgroundTint="@color/azulsec"
+            android:text="opção b" />
+
+        <Button
+            android:id="@+id/bt_enviar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/banca"
+            android:backgroundTint="@color/azulsec"
+            android:text="opção c" />
+
+        <Button
+            android:id="@+id/bt_enviar4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/banca"
+            android:backgroundTint="@color/azulsec"
+            android:text="opção D" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/rosa"
+        android:text="Próximo" />
+
+</LinearLayout>
