@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_editarsala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/roundbt_shape"
+        android:fontFamily="@font/nunito_bold"
+        android:backgroundTint="@color/white"
+        android:text="editar sala" />
+
+    <Button
+        android:id="@+id/bt_excluirsala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbt_shape"
+        android:fontFamily="@font/nunito_bold"
+        android:backgroundTint="@color/rosa"
+        android:text="Excluir sala" />
+
+    <Button
+        android:id="@+id/bt_cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbt_shape"
+        android:fontFamily="@font/nunito_bold"
+        android:backgroundTint="@color/white"
+        android:text="Cancelar" />
+</LinearLayout>

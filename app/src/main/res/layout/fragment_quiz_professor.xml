@@ -23,7 +23,7 @@
             android:layout_marginTop="5dp"
             android:iconifiedByDefault="false"/>
         <Button
-            android:id="@+id/bt_enviar"
+            android:id="@+id/bt_enviar2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -77,7 +77,7 @@
                         android:text="Sistema cardiovascular" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
@@ -112,7 +112,7 @@
                         android:text="Sistema Nervoso" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
@@ -153,7 +153,7 @@
                         android:text="Sistema Digestório" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"

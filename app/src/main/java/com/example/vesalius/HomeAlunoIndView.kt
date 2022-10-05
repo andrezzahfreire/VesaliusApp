@@ -31,8 +31,7 @@ class HomeAlunoIndView : AppCompatActivity() {
 
         // bt action bar
         setSupportActionBar(toolbarprin)
-        supportActionBar?.setTitle("Conteúdos")
-
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         replaceFragment(HomeAlunoInd())
 
 

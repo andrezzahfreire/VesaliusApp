@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.vesalius.databinding.ActivityConteudoViewBinding
 import com.example.vesalius.databinding.ActivityCriarContaViewBinding
+import kotlinx.android.synthetic.main.appbarprin.*
 
 class ConteudoView : AppCompatActivity() {
     lateinit var binding: ActivityConteudoViewBinding
@@ -13,5 +14,8 @@ class ConteudoView : AppCompatActivity() {
         binding = ActivityConteudoViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(toolbarprin)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
     }
 }

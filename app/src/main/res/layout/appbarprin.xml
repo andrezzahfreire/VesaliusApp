@@ -4,33 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
+    android:layout_height="125dp"
     android:background="@color/azulpri"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:id="@+id/toolbarprin"
     >
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
         <ImageView
-            android:layout_marginVertical="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/logo_white"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VESALIUS"
-        android:textSize="30dp"
-        android:layout_gravity="center"
-        android:textColor="@color/white"/>
-
-    </LinearLayout>
+            android:layout_height="120dp"
+            android:src="@drawable/logo_white"
+            android:layout_gravity="center_horizontal"
+            />
 
 </androidx.appcompat.widget.Toolbar>

@@ -3,7 +3,10 @@ package com.example.vesalius
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import android.widget.Toast
+import androidx.core.content.ContentProviderCompat.requireContext
 import com.example.vesalius.databinding.ActivityCriarContaViewBinding
 import com.example.vesalius.databinding.ActivityLoginViewBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +22,14 @@ class CriarContaView : AppCompatActivity() {
 
         binding = ActivityCriarContaViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // coloca as areas
+        val areas = resources.getStringArray(R.array.areas)
+        val arrayAdapter = ArrayAdapter(this, R.layout.dropdown_item, areas)
+        // get reference to the autocomplete text view
+        val autocompleteTV = findViewById<AutoCompleteTextView>(R.id.edt_area)
+        // set adapter to the autocomplete tv to the arrayAdapter
+        autocompleteTV.setAdapter(arrayAdapter)
 
         firebaseAuth = FirebaseAuth.getInstance()
 
@@ -65,10 +76,12 @@ class CriarContaView : AppCompatActivity() {
             }
         }//fim on click
 
+
     }// fim on create
 
     fun salvarUsu (nome:String,sobrenome:String,email :String,senha :String,area :String ,tipo :String){
        val db = FirebaseFirestore.getInstance()
+       val uid =  firebaseAuth.currentUser?.uid.toString()
         val user: MutableMap<String,Any> = HashMap()
         user ["nome"] = nome
         user ["sobrenome"] = sobrenome
@@ -76,9 +89,9 @@ class CriarContaView : AppCompatActivity() {
         user ["senha"] = senha
         user ["area"] = area
         user ["tipo"] = tipo
+        user ["id"] = uid
 
-        db.collection("users")
-            .add(user)
+        db.collection("users").document(uid).set(user)
             .addOnCompleteListener { task->
                 if(task.isSuccessful){
                     Toast.makeText(this, " Conta criada com sucesso",Toast.LENGTH_SHORT).show()

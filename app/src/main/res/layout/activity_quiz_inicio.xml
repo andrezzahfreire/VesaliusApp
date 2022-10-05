@@ -41,7 +41,7 @@
         android:text="Vamos jogar?" />
 
     <Button
-        android:id="@+id/bt_enviar"
+        android:id="@+id/bt_enviar7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -53,7 +53,7 @@
         android:text="JOGAR" />
 
     <Button
-        android:id="@+id/bt_enviar"
+        android:id="@+id/bt_comojogar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -65,7 +65,7 @@
         android:text="COMO JOGAR" />
 
     <Button
-        android:id="@+id/bt_enviar"
+        android:id="@+id/bt_nivel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

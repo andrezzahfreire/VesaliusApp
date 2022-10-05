@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
+        android:textStyle="bold"
         android:textSize="20dp"
         android:text="Selecione o tipo de conta" />
 
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:paddingBottom="20dp"
         android:background="@drawable/container_components">
 
@@ -44,7 +45,6 @@
             android:layout_height="wrap_content"
             android:background="@drawable/btshape"
             android:layout_margin="10dp"
-
             android:textColor="@color/white"
             android:text="Aluno" />
     </LinearLayout>

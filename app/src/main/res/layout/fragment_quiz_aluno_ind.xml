@@ -16,6 +16,7 @@
             android:layout_height="wrap_content" >
 
             <LinearLayout
+                android:id="@+id/sis_cardio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -30,13 +31,6 @@
                     android:layout_height="120dp"
                     app:srcCompat="@drawable/cardio" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
-
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
@@ -44,6 +38,24 @@
                     android:layout_marginTop="20dp"
                     android:textColor="@color/white"
                     android:text="Sistema cardiovascular" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="10 questões" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:foreground="@color/white"
+                    android:layout_height="wrap_content"
+                    />
+
+
 
             </LinearLayout>
 
@@ -61,6 +73,24 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     app:srcCompat="@drawable/sisnervoso" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text="Sistema Nervoso" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="10 questões" />
+
                 <ProgressBar
                     android:id="@+id/progressBar2"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -68,14 +98,7 @@
                     android:layout_height="wrap_content"
                     />
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textColor="@color/white"
-                    android:textAlignment="center"
-                    android:text="Sistema Nervoso" />
+
 
             </LinearLayout>
         </TableRow>
@@ -99,12 +122,6 @@
                     android:layout_height="120dp"
                     app:srcCompat="@drawable/sisdigestivo" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar3"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -114,6 +131,23 @@
                     android:textColor="@color/white"
                     android:textAlignment="center"
                     android:text="Sistema Digestório" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="10 questões" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -131,12 +165,6 @@
                     android:layout_height="120dp"
                     app:srcCompat="@drawable/sisesq" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar4"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
 
                 <TextView
                     android:id="@+id/textView10"
@@ -146,6 +174,23 @@
                     android:textColor="@color/white"
                     android:textAlignment="center"
                     android:text="Sistema Esquelético" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="10 questões" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
             </LinearLayout>
 
         </TableRow>

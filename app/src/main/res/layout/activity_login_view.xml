@@ -13,7 +13,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/logo_app_white" />
 
@@ -21,7 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
         android:padding="20dp"
         android:background="@drawable/container"
         android:orientation="vertical">
@@ -31,7 +32,9 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:textAlignment="center"
             android:text="Login" />
 
@@ -80,13 +83,24 @@
             android:background="@android:color/transparent"
             android:text="Esqueceu a senha?" />
 
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+         android:fontFamily="@font/nunito_bold"
+        android:text="Ou entrar com" />
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:layout_gravity="center"
         android:orientation="horizontal">
 
@@ -105,6 +119,7 @@
         android:background="@android:color/transparent"
         android:textColor="#B72C47"
         android:text="Clique aqui" />
+
 
     </LinearLayout>
 </LinearLayout>

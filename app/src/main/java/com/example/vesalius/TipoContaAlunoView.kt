@@ -17,6 +17,7 @@ class TipoContaAlunoView : AppCompatActivity() {
         //bt voltar action bar
         setSupportActionBar(toolbarprin)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         //passa o tipo de aluno
 

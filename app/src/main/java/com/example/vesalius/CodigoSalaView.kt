@@ -13,7 +13,7 @@ class CodigoSalaView : AppCompatActivity() {
         binding = ActivityCodigoSalaViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btEntrarsalacod.setOnClickListener {
+        binding.btEntrarsalsacod.setOnClickListener {
             Toast.makeText(this,"Funcionando",Toast.LENGTH_SHORT)
         }
     }

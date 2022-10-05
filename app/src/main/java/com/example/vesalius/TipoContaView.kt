@@ -23,6 +23,7 @@ class TipoContaView : AppCompatActivity() {
 
         setSupportActionBar(toolbarprin)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         val tipo = Intent(this,CriarContaView::class.java)
 

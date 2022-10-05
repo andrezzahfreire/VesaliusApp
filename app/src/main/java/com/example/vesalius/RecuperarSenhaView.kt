@@ -28,7 +28,7 @@ class RecuperarSenhaView : AppCompatActivity() {
 
 
         binding.btEnviar.setOnClickListener {
-            val email = binding.edtEmailrep.toString()
+            val email = binding.edtEmailrep.text.toString()
             if(email.isEmpty()){
                 Toast.makeText(this,"Coloque o email", Toast.LENGTH_SHORT).show()
             }else{

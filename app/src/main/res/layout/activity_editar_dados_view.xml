@@ -10,7 +10,7 @@
     tools:context=".EditarDadosView">
 
     <include
-        layout="@layout/appbarprin"/>
+        layout="@layout/appbareditar"/>
 
 
     <RelativeLayout
@@ -20,21 +20,21 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_perfil"
-            app:civ_border_width="4dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:src="@drawable/ic_person"
             app:civ_border_color="@color/azulpri"
-            android:layout_width="200dp"
-            android:layout_height="200dp"/>
+            app:civ_border_width="4dp" />
 
 
         <ImageButton
             android:id="@+id/imageView14"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_alignRight="@+id/img_perfil"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="120dp"
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/bt_editar" />
 
@@ -47,32 +47,44 @@
         android:orientation="vertical"
         android:layout_margin="20dp">
 
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlinedTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nome:"
-            android:background="@color/white"
+            android:textColorHint="@color/azulsec"
+            app:hintTextColor="@color/azulsec"
             app:endIconDrawable="@drawable/edit_aazul"
             app:endIconTint="@color/azulsec"
             app:endIconMode="custom"
-
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome_edt"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/outlinedTextField2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="@color/azulsec"
             android:background="@color/white"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
             app:endIconDrawable="@drawable/edit_aazul"
             app:endIconTint="@color/azulsec"
             app:endIconMode="custom"
@@ -80,6 +92,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sobre_edt"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -92,13 +106,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email:"
+            android:textColorHint="@color/azulsec"
             android:background="@color/white"
             app:endIconDrawable="@drawable/gmaillogo"
             app:endIconTint="@color/azulsec"
             app:endIconMode="custom"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_edt"
+                android:text=""
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 />
@@ -108,25 +129,27 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/outlinedTextField4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Area:"
-            android:background="@color/white"
             app:endIconDrawable="@drawable/area"
-            app:endIconTint="@color/azulsec"
-            app:endIconMode="custom"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            android:backgroundTint="@color/azulsec"
+            >
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
+                android:id="@+id/edt_area"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:hint="Area:"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/bt_salvar"
             android:backgroundTintMode="add"
             android:background="@drawable/container"
             android:layout_width="match_parent"

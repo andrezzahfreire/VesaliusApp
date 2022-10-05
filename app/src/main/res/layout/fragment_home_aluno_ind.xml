@@ -7,6 +7,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeAlunoInd">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -17,6 +20,7 @@
             android:layout_height="wrap_content" >
 
             <LinearLayout
+                android:id="@+id/sis_cardio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -26,13 +30,14 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/imageView30"
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     app:srcCompat="@drawable/cardio" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView31"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -42,6 +47,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/sis_ner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -51,13 +57,13 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/imageView32"
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     app:srcCompat="@drawable/sisnervoso" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -73,6 +79,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+                android:id="@+id/sis_dig"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -98,6 +105,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/sis_esq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -129,6 +137,7 @@
             android:layout_height="wrap_content" >
 
             <LinearLayout
+                android:id="@+id/sis_uri"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -154,6 +163,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/sis_musc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/container"
@@ -179,7 +189,127 @@
             </LinearLayout>
         </TableRow>
 
-    </TableLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
+            <LinearLayout
+                android:id="@+id/sis_fem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container"
+                android:backgroundTint="@color/azulsec"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/sis_masc" />
+
+                <TextView
+                    android:id="@+id/textView36"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="Sistema Reprodutor Feminino" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sis_masc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container"
+                android:backgroundTint="@color/azulsec"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/sis_masc" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text="Sistema Reprodutor Masculino" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/sis_resp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container"
+                android:backgroundTint="@color/azulsec"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView40"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/sis_resp" />
+
+                <TextView
+                    android:id="@+id/textView41"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:text="Sistema Respiratório" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sis_tegu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container"
+                android:backgroundTint="@color/azulsec"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView42"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/sis_tegu" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text="Sistema Tegumentar" />
+
+            </LinearLayout>
+        </TableRow>
+
+
+
+    </TableLayout>
+    </ScrollView>
 
 </FrameLayout>

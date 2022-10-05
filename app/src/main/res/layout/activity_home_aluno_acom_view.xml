@@ -11,9 +11,31 @@
     tools:context=".HomeAlunoAcomView">
 
 
-    <include
-        layout="@layout/appbarprin"
-        />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@color/azulpri"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:id="@+id/toolbarprin_prof"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_white"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bt_perfil"
+            app:civ_border_width="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="end"
+            android:src="@drawable/anotacoes"
+            app:civ_border_color="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
 
 
         <TextView

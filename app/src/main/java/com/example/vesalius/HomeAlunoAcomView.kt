@@ -20,12 +20,17 @@ class HomeAlunoAcomView : AppCompatActivity() {
 
         setSupportActionBar(toolbarprin)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        binding.btEntrarSala.setOnClickListener {
-             val intent = Intent(this,CodigoSalaView::class.java)
+        binding.btPerfil.setOnClickListener {
+            val intent = Intent (this, PerfilProfView::class.java)
+            intent.putExtra("tipo","Aluno Acompanhado")
             startActivity(intent)
+
+            finish()
         }
 
+        // getting the recyclerview by its id
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
 
         // this creates a vertical layout Manager
@@ -36,15 +41,23 @@ class HomeAlunoAcomView : AppCompatActivity() {
 
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (i in 1..20) {
+      /*  for (i in 1..20) {
             data.add(ItemsViewModel(R.drawable.area, "Item " + i))
         }
-
+*/
         // This will pass the ArrayList to our Adapter
-        val adapter = CustomAdapter(data)
+
+       // val adapter = CustomAdapter(data)
 
         // Setting the Adapter with the recyclerview
-        recyclerview.adapter = adapter
+
+      //  recyclerview.adapter = adapter
+
+     binding.btEntrarSala.setOnClickListener {
+             val intent = Intent(this,CodigoSalaView::class.java)
+            startActivity(intent)
+        }
+
     }// fim on create
 
 

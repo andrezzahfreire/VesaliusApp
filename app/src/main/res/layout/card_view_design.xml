@@ -18,9 +18,10 @@
             android:layout_height="match_parent"
             android:background="@color/azulpri"
             android:orientation="vertical">
+
             <ImageView
                 android:background="@color/azulpri"
-                android:id="@+id/imageview"
+                android:id="@+id/img_sala"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
                 tools:srcCompat="@tools:sample/avatars"
@@ -35,7 +36,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/titulo_sala"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -44,7 +45,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/professor_sala"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -55,7 +56,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/turma_sala"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -65,13 +66,14 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <Button
-            android:layout_marginLeft="20dp"
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:text="Button" />
+        <ImageButton
+            android:id="@+id/bt_opsala"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            app:srcCompat="@drawable/trespontos" />
+
 
     </LinearLayout>
 

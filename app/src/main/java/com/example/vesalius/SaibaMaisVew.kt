@@ -18,7 +18,7 @@ class SaibaMaisVew : AppCompatActivity() {
         // bt voltar action bar
         setSupportActionBar(toolbarprin)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
+        supportActionBar?.setDisplayShowTitleEnabled(false)
     }// fim on create
 
 }// fim saiba mais

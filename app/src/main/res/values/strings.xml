@@ -2,4 +2,12 @@
     <string name="app_name">Vesalius</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="areas">
+        <item>Medicina</item>
+        <item>Fisioterapia</item>
+        <item>Odontologia</item>
+        <item>Emfermagem</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
