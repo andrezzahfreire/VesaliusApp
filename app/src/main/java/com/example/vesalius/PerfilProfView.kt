@@ -1,6 +1,7 @@
 package com.example.vesalius
 
 import android.content.Intent
+import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -9,7 +10,9 @@ import com.example.vesalius.databinding.ActivityPerfilProfViewBinding
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.appbarprin.*
+import java.io.File
 
 class PerfilProfView : AppCompatActivity() {
     private lateinit var user : FirebaseAuth
@@ -30,6 +33,8 @@ class PerfilProfView : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         val db = FirebaseFirestore.getInstance()
         val uid =  firebaseAuth.currentUser?.uid.toString()
+
+        //fotoPerfil()
 
         db.collection("users").whereEqualTo("id",uid)
             .get()
@@ -121,5 +126,20 @@ class PerfilProfView : AppCompatActivity() {
 
         }
 
+    }
+
+    private fun fotoPerfil() {
+        val uid =  firebaseAuth.currentUser?.uid.toString()
+        val imageName = uid
+        val storageRef = FirebaseStorage.getInstance().getReference("images/$imageName")
+        val localFile = File.createTempFile("tempImage","heic")
+        storageRef.getFile(localFile).addOnSuccessListener {
+
+            val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
+            binding.imgPerfil.setImageBitmap(bitmap)
+
+        }.addOnFailureListener{
+            Toast.makeText(this,"Erro ao recuperar !!",Toast.LENGTH_LONG).show()
+        }//fim foto perfil
     }
 }

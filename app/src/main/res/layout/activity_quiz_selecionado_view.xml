@@ -20,20 +20,24 @@
             android:background="@color/azulpri" />
 
         <TextView
-            android:background="@drawable/container"
-            android:id="@+id/textView14"
+            android:id="@+id/txt_nivel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20sp"
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_alignParentEnd="true"
-            android:paddingRight="20dp"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/container"
             android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Fácil"
             android:textColor="@color/black"
-            android:text="Fácil" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sis_img"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_centerInParent="true"
@@ -43,13 +47,12 @@
             app:civ_border_width="4dp" />
 
         <ImageButton
-            android:id="@+id/button2"
+            android:id="@+id/bt_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
 
             android:layout_centerInParent="true"
-
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/bt_play" />
 
@@ -146,7 +149,7 @@
             android:text=" 0 questoões" />
 
         <Button
-            android:id="@+id/bt_enviar"
+            android:id="@+id/bt_voltar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

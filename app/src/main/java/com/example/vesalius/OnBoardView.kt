@@ -85,10 +85,14 @@ class OnBoardView : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         val sharedpreferences =  getSharedPreferences(getString(applicationInfo.labelRes), MODE_PRIVATE)
+
+        // se o usuario ja tiver fisto a onboard view nao aparece denovo
         if (!sharedpreferences.getBoolean(prevStarted, false)) {
             val editor = sharedpreferences.edit()
             editor.putBoolean(prevStarted, Boolean.TRUE)
             editor.apply()
+
+
         } else {
             val intent = Intent(this,LoginView::class.java)
             startActivity(intent)

@@ -45,7 +45,7 @@ class HomeProfessorView : AppCompatActivity() {
         binding.btPerfil.setOnClickListener {
             val intent = Intent (this, PerfilProfView::class.java)
             startActivity(intent)
-           // finish()
+            // finish()
         }
 
         binding.btCriarsala.setOnClickListener {
@@ -54,38 +54,13 @@ class HomeProfessorView : AppCompatActivity() {
 
         }
 
-
-
-      //  val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
-
         recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         bd = FirebaseFirestore.getInstance()
 
-
-        // this creates a vertical layout Manager
-       // recyclerview.layoutManager = LinearLayoutManager(this)
-
-        // ArrayList of class ItemsViewModel
-
         val data = ArrayList<ItemsViewModel>()
-
-        // This loop will create 20 Views containing
-        // the image with the count of view
-
-        /*
-        for (i in 1..20) {
-            data.add(ItemsViewModel(R.drawable.area, "Item " + i))
-        }
-        */
-
-        // This will pass the ArrayList to our Adapter
-       // val adapter = CustomAdapter(data)
-
-        // Setting the Adapter with the recyclerview
-       //    recyclerview.adapter = adapter
 
         EventChangeListener()
 
@@ -95,35 +70,28 @@ class HomeProfessorView : AppCompatActivity() {
         bd.collection("salas").orderBy("turma",Query.Direction.ASCENDING)
             .addSnapshotListener {snapshot, e ->
                if (e!= null ){
-
                    if (progressDialog.isShowing){
                      progressDialog.dismiss()
                    }
-
                    Toast.makeText(this,"erro", Toast.LENGTH_SHORT).show()
                    return@addSnapshotListener
                }
                 if (snapshot != null) {
-                    Toast.makeText(this,"deu certo", Toast.LENGTH_SHORT).show()
+                   // Toast.makeText(this,"deu certo", Toast.LENGTH_SHORT).show()
                     salaArrayList = arrayListOf(SalaModel())
-
                     for (dc :DocumentChange in snapshot.documentChanges){
                        if(dc.type == DocumentChange.Type.ADDED){
 
                            val doc = dc.document.toObject(SalaModel::class.java)
                            salaArrayList.add(dc.document.toObject(SalaModel :: class.java))
 
-                           Toast.makeText(this,"foi", Toast.LENGTH_SHORT).show()
-                              println(salaArrayList.toString())
                            if (progressDialog.isShowing){
                                progressDialog.dismiss()
                            }
                        }
                     }
-
                     myadapter = CustomAdapter(salaArrayList)
                     recyclerView.adapter = myadapter
-
                 }
             }
     }

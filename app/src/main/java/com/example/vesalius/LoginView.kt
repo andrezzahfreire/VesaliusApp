@@ -71,6 +71,7 @@ class LoginView : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
+      //autenticação
       firebaseAuth = FirebaseAuth.getInstance()
       val db = FirebaseFirestore.getInstance()
       val uid =  firebaseAuth.currentUser?.uid.toString()
@@ -78,6 +79,7 @@ class LoginView : AppCompatActivity() {
           .get()
           .addOnCompleteListener {
               val result : StringBuffer = StringBuffer ()
+              //seleciona a tela que o usuario ira utilizar
               if (it.isSuccessful){
                   for(document in it.result !!) {
                      val tipo =  document.getString("tipo")
@@ -96,6 +98,7 @@ class LoginView : AppCompatActivity() {
                                   startActivity(intent)
                                   finish()
                           }
+
                           }
 
                       }

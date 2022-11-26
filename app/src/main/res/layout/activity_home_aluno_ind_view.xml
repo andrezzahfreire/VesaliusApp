@@ -11,7 +11,7 @@
 
     <include
         android:id="@+id/appbar2"
-        layout="@layout/appbarperfil" />
+        layout="@layout/appbarprin" />
 
     <FrameLayout
         android:id="@+id/fragment_container"

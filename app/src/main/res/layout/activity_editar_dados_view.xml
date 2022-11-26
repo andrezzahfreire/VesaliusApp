@@ -30,13 +30,15 @@
 
 
         <ImageButton
-            android:id="@+id/imageView14"
+            android:id="@+id/bt_foto"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_alignRight="@+id/img_perfil"
             android:layout_marginTop="120dp"
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/bt_editar" />
+
+
 
     </RelativeLayout>
     <LinearLayout

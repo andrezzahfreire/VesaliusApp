@@ -38,13 +38,13 @@ class CustomAdapter(private val salaArrayList: ArrayList<SalaModel>) : RecyclerV
         sala.codigo = " "
         // sets the text to the textview from our itemHolder class
 
-       // holder.textView.text = ItemsViewModel.text
+
 
     }
 
     // return the number of the items in the list
     override fun getItemCount(): Int {
-       // return mList.size
+
         return salaArrayList.size
     }
 

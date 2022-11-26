@@ -30,10 +30,10 @@
             app:civ_border_width="4dp"
             android:layout_marginRight="20dp"
             android:layout_gravity="end"
-            android:src="@drawable/anotacoes"
+            android:src="@drawable/area"
             app:civ_border_color="@android:color/transparent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
     </androidx.appcompat.widget.Toolbar>
 
     <TextView

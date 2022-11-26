@@ -31,6 +31,26 @@ class QuizAlunoInd : Fragment() {
             startActivity(intent)
         }// fim botao
 
+        binding.sisEsq.setOnClickListener {
+            val intent = Intent(this@QuizAlunoInd.requireContext(), QuizInicio::class.java)
+            startActivity(intent)
+        }// fim botao
+
+        binding.sisFem.setOnClickListener {
+            val intent = Intent(this@QuizAlunoInd.requireContext(), QuizInicio::class.java)
+            startActivity(intent)
+        }// fim botao
+
+        binding.sisMusc.setOnClickListener {
+            val intent = Intent(this@QuizAlunoInd.requireContext(), QuizInicio::class.java)
+            startActivity(intent)
+        }// fim botao
+
+        binding.sisNer.setOnClickListener {
+            val intent = Intent(this@QuizAlunoInd.requireContext(), QuizInicio::class.java)
+            startActivity(intent)
+        }// fim botao
+
         return binding.root
     }
 

@@ -29,25 +29,12 @@ class HomeAlunoInd : Fragment() {
             startActivity(intent)
         }// fim botao
 
-        binding.sisDig.setOnClickListener {
-            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
-            startActivity(intent)
-        }// fim botao
-
         binding.sisEsq.setOnClickListener {
             val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
             startActivity(intent)
         }// fim botao
 
-        binding.sisFem.setOnClickListener {
-            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
-            startActivity(intent)
-        }// fim botao
 
-        binding.sisMasc.setOnClickListener {
-            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
-            startActivity(intent)
-        }// fim botao
 
         binding.sisMusc.setOnClickListener {
             val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
@@ -59,20 +46,6 @@ class HomeAlunoInd : Fragment() {
             startActivity(intent)
         }// fim botao
 
-        binding.sisResp.setOnClickListener {
-            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
-            startActivity(intent)
-        }// fim botao
-
-        binding.sisTegu.setOnClickListener {
-            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
-            startActivity(intent)
-        }// fim botao
-
-        binding.sisUri.setOnClickListener {
-            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
-            startActivity(intent)
-        }// fim botao
 
         return binding.root
     }
