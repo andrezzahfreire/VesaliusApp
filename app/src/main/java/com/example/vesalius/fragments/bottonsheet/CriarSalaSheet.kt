@@ -14,6 +14,10 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.*
+import kotlin.collections.HashMap
+import kotlin.random.Random.Default.nextInt
+import java.util.Random
 
 
 class CriarSalaSheet : BottomSheetDialogFragment() {
@@ -40,7 +44,8 @@ class CriarSalaSheet : BottomSheetDialogFragment() {
     }
 
     private fun saveAction() {
-        val codigo="123456"
+
+        val codigo = (10000..100000).random().toString()
         val nome = binding.nomesalaEdt.text.toString()
         val turma = binding.nometurmaEdt.text.toString()
         val professor= binding.nomeprofessorEdt.text.toString()
@@ -71,6 +76,11 @@ class CriarSalaSheet : BottomSheetDialogFragment() {
 
             }
     }
+
+
+
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

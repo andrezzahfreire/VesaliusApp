@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Vesalius"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayActivity"
+            android:exported="false" />
+        <activity
             android:name=".EscolherAssuntoQuiz"
             android:exported="false" />
         <activity

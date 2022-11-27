@@ -67,6 +67,7 @@ class HomeProfessorView : AppCompatActivity() {
     }
 
     private fun EventChangeListener() {
+
         bd.collection("salas").orderBy("turma",Query.Direction.ASCENDING)
             .addSnapshotListener {snapshot, e ->
                if (e!= null ){
@@ -84,7 +85,6 @@ class HomeProfessorView : AppCompatActivity() {
 
                            val doc = dc.document.toObject(SalaModel::class.java)
                            salaArrayList.add(dc.document.toObject(SalaModel :: class.java))
-
                            if (progressDialog.isShowing){
                                progressDialog.dismiss()
                            }

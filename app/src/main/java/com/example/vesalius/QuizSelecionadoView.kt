@@ -44,7 +44,7 @@ class QuizSelecionadoView : AppCompatActivity() {
         }
 
         binding.btPlay.setOnClickListener {
-            val intent = Intent(this, QuestaoQuizView::class.java)
+            val intent = Intent(this, PlayActivity::class.java)
             startActivity(intent)
             finish()
         }

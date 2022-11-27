@@ -60,6 +60,7 @@ class PerfilProfView : AppCompatActivity() {
 
             }
 
+
 //vai editar dados
         binding.btIreditarperfil.setOnClickListener {
             val intent = Intent(this, EditarDadosView::class.java)

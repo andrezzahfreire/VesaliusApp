@@ -51,13 +51,12 @@
                     android:textColor="@color/white"
                     android:text="10 questões" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar1"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:foreground="@color/white"
-                    android:layout_height="wrap_content"
-                    />
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:indeterminate="true"
+                    app:trackThickness="20dp"
+                    app:trackCornerRadius="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
 
 
 
@@ -96,12 +95,12 @@
                     android:textColor="@color/white"
                     android:text="10 questões" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar3"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:indeterminate="true"
+                    app:trackThickness="20dp"
+                    app:trackCornerRadius="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
 
             </LinearLayout>
         </TableRow>
@@ -142,15 +141,12 @@
                     android:textColor="@color/white"
                     android:text="10 questões" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:foreground="@color/white"
-                    android:layout_height="wrap_content"
-                    />
-
-
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:indeterminate="true"
+                    app:trackThickness="20dp"
+                    app:trackCornerRadius="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
 
             </LinearLayout>
 
@@ -187,12 +183,12 @@
                     android:textColor="@color/white"
                     android:text="10 questões" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar2"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:indeterminate="true"
+                    app:trackThickness="20dp"
+                    app:trackCornerRadius="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
 
 
 
@@ -204,6 +200,7 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
+
                 android:id="@+id/sis_fem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -237,12 +234,13 @@
                     android:textColor="@color/white"
                     android:text="10 questões" />
 
-                <ProgressBar
-                    android:id="@+id/progressBar4"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:indeterminate="true"
+                    app:trackThickness="20dp"
+
+                    app:trackCornerRadius="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
 
 
             </LinearLayout>

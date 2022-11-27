@@ -1,16 +1,16 @@
 package com.example.vesalius.util
 
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 
 import androidx.recyclerview.widget.RecyclerView
-import com.example.vesalius.ItemsViewModel
-import com.example.vesalius.R
-import com.example.vesalius.SalaModel
+import com.example.vesalius.*
 import com.example.vesalius.databinding.CardViewDesignBinding
 
 class CustomAdapter(private val salaArrayList: ArrayList<SalaModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
@@ -38,15 +38,21 @@ class CustomAdapter(private val salaArrayList: ArrayList<SalaModel>) : RecyclerV
         sala.codigo = " "
         // sets the text to the textview from our itemHolder class
 
+        holder.itemView.setOnClickListener { v ->
+            val intent = Intent(v.context, PlayActivity::class.java)
+            v.context.startActivity(intent)
 
-
+        }
     }
 
     // return the number of the items in the list
     override fun getItemCount(): Int {
 
-        return salaArrayList.size
+        var size = salaArrayList.size
+        return size
+
     }
+
 
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
@@ -55,6 +61,7 @@ class CustomAdapter(private val salaArrayList: ArrayList<SalaModel>) : RecyclerV
         val nomeSala: TextView = itemView.findViewById(R.id.titulo_sala)
         val professorSala: TextView = itemView.findViewById(R.id.professor_sala)
         val turmaSala: TextView = itemView.findViewById(R.id.turma_sala)
+
 
     }
 }
