@@ -26,11 +26,13 @@ class HomeAlunoInd : Fragment() {
 
         binding.sisCardio.setOnClickListener {
             val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
+            intent.putExtra("siste","cardio")
             startActivity(intent)
         }// fim botao
 
         binding.sisEsq.setOnClickListener {
             val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
+            intent.putExtra("siste","esque")
             startActivity(intent)
         }// fim botao
 
@@ -38,11 +40,19 @@ class HomeAlunoInd : Fragment() {
 
         binding.sisMusc.setOnClickListener {
             val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
+            intent.putExtra("siste","musc")
             startActivity(intent)
         }// fim botao
 
         binding.sisNer.setOnClickListener {
             val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
+            intent.putExtra("siste","nervo")
+            startActivity(intent)
+        }// fim botao
+
+        binding.sisMasc.setOnClickListener {
+            val intent = Intent(this@HomeAlunoInd.requireContext(), ConteudoView::class.java)
+            intent.putExtra("siste","fem")
             startActivity(intent)
         }// fim botao
 

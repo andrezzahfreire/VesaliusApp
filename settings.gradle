@@ -6,12 +6,20 @@ pluginManagement {
 
     }
 }
+
+rootProject.name = "Vesalius"
+include ':app'
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('C:\\Users\\andre\\Downloads\\VuforiaAr\\unityLibrary')
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
     }
 }
-rootProject.name = "Vesalius"
-include ':app'
+

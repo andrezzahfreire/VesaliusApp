@@ -9,5 +9,8 @@
         <item>Odontologia</item>
         <item>Emfermagem</item>
     </string-array>
+
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="assunto1musc">O Sistema Muscular é o conjunto de músculos existentes no corpo humano, sua formação se dá por tecido originado pelo mesoderma (folheto embrionário que dá origem aos músculos, o esqueleto e os sistemas cardiovascular, excretor e reprodutor). Sua característica principal é a propriedade de contração e relaxamento de suas fibras. O ramo da anatomia que o estuda é a Miologia.</string>
+    <string name="game_view_content_description">Game view</string>
 </resources>
