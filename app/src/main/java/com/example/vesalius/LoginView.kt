@@ -48,9 +48,41 @@ class LoginView : AppCompatActivity() {
 
                     firebaseAuth.signInWithEmailAndPassword(email,senha).addOnCompleteListener {
                         if(it.isSuccessful){
+                            firebaseAuth = FirebaseAuth.getInstance()
+                            val db = FirebaseFirestore.getInstance()
+                            val uid =  firebaseAuth.currentUser?.uid.toString()
+                            db.collection("users").whereEqualTo("id",uid)
+                                .get()
+                                .addOnCompleteListener {
+                                    val result : StringBuffer = StringBuffer ()
+                                    //seleciona a tela que o usuario ira utilizar
+                                    if (it.isSuccessful){
+                                        for(document in it.result !!) {
+                                            val tipo =  document.getString("tipo")
+                                            if(firebaseAuth.currentUser != null){
+                                                if(tipo.toString()=="Aluno Individual"){
+                                                    val intent = Intent (this, HomeAlunoIndView::class.java)
+                                                    startActivity(intent)
+                                                    finish()
+                                                }else{
+                                                    if(tipo.toString()=="Aluno Acompanhado"){
+                                                        val intent = Intent (this, HomeAlunoAcomView::class.java)
+                                                        startActivity(intent)
+                                                        finish()
+                                                    }else{
+                                                        val intent = Intent (this, HomeProfessorView::class.java)
+                                                        startActivity(intent)
+                                                        finish()
+                                                    }
 
-                            val intent = Intent(this, HomeAlunoIndView::class.java)
-                            startActivity(intent)
+                                                }
+
+                                            }
+                                        }
+
+                                    }
+
+                                }
                         }else{
                             Toast.makeText(this,"Email ou senha incorretos", Toast.LENGTH_SHORT).show()
                         }// fim else

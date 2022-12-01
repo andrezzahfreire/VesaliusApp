@@ -86,17 +86,6 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:textSize="15sp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-         android:fontFamily="@font/nunito_bold"
-        android:text="Ou entrar com" />
-
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

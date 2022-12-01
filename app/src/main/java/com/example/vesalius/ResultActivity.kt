@@ -23,10 +23,11 @@ class ResultActivity : AppCompatActivity() {
         skip = intent.extras!!.getInt("skip")
         initializeViews()
     }
+
     @SuppressLint("SetTextI18n")
     private fun initializeViews() {
         activityResultBinding.apply {
-            tvScore.text = "$totalScore/10"
+            tvScore.text = "$totalScore/5"
             //tvright.text = "Correct: $totalScore"
             //tvwrong.text = "Wrong: $wrong"
             //tvSkip.text = "Skip: $skip"

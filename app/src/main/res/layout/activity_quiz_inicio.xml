@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:textStyle="bold"
+
         android:textColor="@color/azulsec"
         android:text="Quiz Anatomy" />
 
@@ -45,11 +46,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="30dp"
+        android:padding="10dp"
+        android:textSize="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="30dp"
         android:textColor="@color/white"
+        android:textStyle="bold"
 
+        android:backgroundTint="@color/azulsec"
         android:text="JOGAR" />
 
     <Button
@@ -57,11 +62,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
         android:textColor="@color/white"
-        android:backgroundTint="@color/rosa"
+
+        android:backgroundTint="@color/azulsec"
         android:text="COMO JOGAR" />
 
     <Button
@@ -69,11 +77,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:backgroundTint="@color/azulsec"
+        android:layout_marginRight="30dp"
         android:textColor="@color/white"
-        android:backgroundTint="@color/rosa"
+
         android:text="NÍVEL DO JOGO" />
 
     <Button
@@ -81,11 +92,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/azulsec"
         android:textColor="@color/white"
-        android:backgroundTint="@color/rosa"
+
         android:text="SAIR DO JOGO" />
 
 </LinearLayout>

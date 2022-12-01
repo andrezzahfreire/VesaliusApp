@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/azulterc"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Anotacoes">
+
+    <include
+        layout="@layout/appbarprin">
+    </include>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anotações"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:textSize="30dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        tools:itemCount="2"
+        tools:listitem="@layout/card_anotacoes" />
+
+    <ImageButton
+        android:id="@+id/bt_mais"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/btmais" />
+
+
+</LinearLayout>

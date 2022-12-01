@@ -1,5 +1,6 @@
 package com.example.vesalius
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -14,7 +15,8 @@ class CodigoSalaView : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btEntrarsalsacod.setOnClickListener {
-            Toast.makeText(this,"Funcionando",Toast.LENGTH_SHORT)
+            val intent = Intent(this,HomeAlunoAcomView::class.java)
+            startActivity(intent)
         }
     }
 }

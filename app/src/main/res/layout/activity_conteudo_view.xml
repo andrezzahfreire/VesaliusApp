@@ -25,93 +25,115 @@
 
     <TextView
         android:id="@+id/titulo_1"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:justificationMode="inter_word"
         android:textStyle="bold"
         android:text="titulo1" />
 
     <TextView
         android:id="@+id/ass_1"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:justificationMode="inter_word"
         android:textStyle="bold"
         android:text="assunto1" />
 
     <TextView
         android:id="@+id/titulo_2"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:justificationMode="inter_word"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:text="titulo2" />
 
     <TextView
         android:id="@+id/ass_2"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:justificationMode="inter_word"
         android:textStyle="bold"
         android:text="assunto2" />
 
     <TextView
         android:id="@+id/titulo_3"
-        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30sp"
+        android:layout_margin="25dp"
         android:justificationMode="inter_word"
-        android:textStyle="bold"
-        android:text="titulo3" />
+        android:text="titulo3"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ass_3"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:justificationMode="inter_word"
         android:text="assunto3" />
 
     <TextView
         android:id="@+id/titulo_4"
-        android:layout_margin="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:justificationMode="inter_word"
-        android:textStyle="bold"
-        android:text="titulo4" />
-
-    <TextView
-        android:id="@+id/ass_4"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="25sp"
         android:justificationMode="inter_word"
         android:textStyle="bold"
+        android:text="titulo4" />
+
+    <TextView
+        android:id="@+id/ass_4"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:justificationMode="inter_word"
+        android:textStyle="bold"
         android:text="assunto4" />
 
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/muscular1" />
 
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/muscular2" />
+    </LinearLayout>
+
+
+</HorizontalScrollView>
 
 
     <LinearLayout
@@ -123,7 +145,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/bt_anot"
             android:layout_width="wrap_content"
             android:layout_gravity=""
             android:layout_height="wrap_content"
